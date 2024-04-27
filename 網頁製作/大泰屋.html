@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>大泰屋點餐系統-武陵高中外食網站</title>
+        <link rel="stylesheet" href="大泰屋.css">
+    </head>
+    <body>
+        <div><!-- 資料庫載入 -->
+            <script src="大泰屋_資料庫.js"></script>
+        </div>
+
+        <header><!-- 頁首 -->
+            <div class="header" id="title"><b>點餐系統-大泰屋</b></div>
+            <div class="header"><a href="大泰屋菜單.jpg" target="_blank">菜單</a></div>
+        </header>
+
+        <main><!-- 主要內容 -->
+            <h2 class="main">主餐</h2>
+            <div class="buttondiv">
+                <script src="大泰屋_主餐菜單.js"></script>
+            </div>
+            <hr>
+            <h2 class="main">小菜</h2>
+            <div class="buttondiv">
+                <script src="大泰屋_小菜菜單.js"></script>
+            </div>
+            <hr>
+            <h2 class="main">飲料</h2>
+            <div class="buttondiv">
+                <script src="大泰屋_飲料菜單.js"></script>
+            </div>
+        </main>
+
+        <aside id="detail"><!-- 細部調整區 -->
+            <h3 class="detail">客製化</h3>
+            <div class="detail">
+                <div id="meal_name">
+                    <span>尚未選擇品項</span>
+                </div>
+                <div id="flavor">
+                </div>
+                <div id="spicy">
+                </div>
+                <div id="addition">
+                </div>
+                <div id="temperature">
+                </div>
+            </div>
+            <input type="submit" text="送出" value="加入訂單" class="detail" onclick="add_bill()">
+        </aside>
+
+        <aside id="bill"><!-- 購物車 -->
+            <h3 class="bill">當前訂單</h3>
+            <div id="bill_inner" class="bill">
+            </div>
+        </aside>
+
+        <div><!-- 後端 -->
+            <script src="大泰屋_客製化後端.js"></script>
+            <script src="大泰屋_訂單後端.js"></script>
+        </div>
+    </body>
+</html>
